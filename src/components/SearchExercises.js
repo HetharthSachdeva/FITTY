@@ -50,7 +50,25 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
           placeholder="Search Exercises"
           type="text"
         />
-        <Button className="search-btn" sx={{ bgcolor: '#FF2625', color: '#fff', textTransform: 'none', width: { lg: '173px', xs: '80px' }, height: '56px', position: 'absolute', right: '0px', fontSize: { lg: '20px', xs: '14px' } }} onClick={handleSearch}>
+        <Button
+          className='btn'
+          sx={{
+            bgcolor: '#3333FF',
+            color: '#fff',
+            textTransform: 'none',
+            width: { lg: '173px', xs: '80px' },
+            height: '56px',
+            position: 'absolute',
+            right: '0px',
+            fontSize: { lg: '20px', xs: '14px' },
+            '&:hover': {
+              bgcolor: '#fff',
+              color: '#3333FF',
+              border: '1px solid #3333FF',
+            },
+          }}
+          onClick={handleSearch}
+        >
           Search
         </Button>
       </Box>
